@@ -7,10 +7,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
-      'sans':['Helvetica'],
-      'serif':["Rische"]
-    },
+     
 
     colors: {
       'black': '#0A0908',
@@ -20,7 +17,13 @@ const config: Config = {
     },
 
     extend: {
-    
+      fontSize : {
+        '10xl' : "15rem"
+      },  
+      fontFamily: {
+        'sans':"var(--font-helvetica)",
+        'serif':"var(--font-rische)",
+      },
     },
   },
   plugins: [],
