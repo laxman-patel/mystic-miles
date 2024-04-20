@@ -4,9 +4,19 @@
 
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   .font-outline-2 {
     -webkit-text-stroke: 2px rgba(255, 255, 255, 0.658);
   }
+
+  .font-outline-3 {
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 1);
+  }
+
+ 
 
   @font-face {
     font-family: 'Rische';
@@ -43,6 +53,17 @@
     font-weight: 700;
     src: url(/fonts/HelveticaNowText-Bold.woff2);
   }
+}
+
+.splide__slide{
+  filter: blur(10px);
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+}
+
+.splide__slide.is-active{
+  filter: blur(0);
+  opacity: 1;
 }
 
 /* :root {
