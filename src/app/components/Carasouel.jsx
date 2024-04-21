@@ -4,14 +4,23 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 
 import Image from "next/image";
+import { useEffect, useState } from 'react';
 
 export default function Carasouel({dataRes}) {
 
     let perPage = 1;
-    
-    if (window.innerWidth >= 1200) {
+    const [windowWidth, setWindowWidth] = useState(undefined);
+
+    useEffect(() => {
+        setWindowWidth(window.innerWidth);
+        window.addEventListener('resize', () => {
+            setWindowWidth(window.innerWidth);
+        })
+    }, []);
+
+    if (windowWidth >= 1200) {
         perPage = 3;
-    } else if (window.innerWidth >= 768) {
+    } else if (windowWidth >= 768) {
         perPage = 2;
     } else {
         perPage = 1;
