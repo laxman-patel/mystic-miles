@@ -7,7 +7,7 @@ export default function LoadMore({dataRes}) {
     const [shouldLoad, setShouldLoad] = useState(false);
 
     return <>
-       {!shouldLoad && <button className="mt-24 transition-all border-2 hover:bg-white hover:text-black text-white font-sans px-14 py-5 bg-black border-white" onClick={() => setShouldLoad(true)} >LOAD MORE</button>}
+       {!shouldLoad && <button className="mt-24 mb-24 transition-all border-2 hover:bg-white hover:text-black text-white font-sans px-14 py-5 bg-black border-white" onClick={() => setShouldLoad(true)} >LOAD MORE</button>}
        {shouldLoad &&  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 pt-16 place-items-center" >
          {dataRes.map((item, _idx) => 
          <div className="flex flex-col items-center h-96 justify-around lg:w-2/3 border border-white hover:scale-105 hover:border-gold transition-all bg-white/5 px-5 py-10">

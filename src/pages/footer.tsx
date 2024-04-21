@@ -17,10 +17,10 @@ export default function Footer() {
         <li  className="py-3 lg:py-0" >catalogue</li>
         <li  className="py-3 lg:py-0" >our customers</li>
     </ul>
-   <div className="flex justify-between pt-20 pb-10 w-1/5">
-    <Image  src={email} alt="email" className="w-10"  />
-    <Image  src={insta} alt="instagram" className="w-10" />
-    <Image  src={phone} alt= "phone" className="w-10" />
+   <div className="flex justify-between items-center pt-20 pb-10 lg:w-1/5">
+    <Image  src={email} alt="email" className="w-10 mr-5"  />
+    <Image  src={insta} alt="instagram" className="w-10 mr-5" />
+    <Image  src={phone} alt= "phone" className="w-10 mr-5" />
    </div>
 </div>
   );
