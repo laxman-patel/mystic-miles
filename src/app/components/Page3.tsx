@@ -1,6 +1,6 @@
 import Image from "next/image";
-import our_customers from "../../public/our_customers.svg";
-import { getGoogleSheetData } from "../app/sheets";
+import our_customers from "../../../public/our_customers.svg";
+import { getGoogleSheetData } from "../sheets";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import Carasouel from "@/app/components/Carasouel";
 
