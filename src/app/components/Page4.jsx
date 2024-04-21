@@ -1,7 +1,7 @@
 import Image from "next/image";
-import catalogue from "../../public/catalogue.svg";
-import { getGoogleSheetData } from "../app/sheets";
-import LoadMore from "../app/components/loadMore";
+import catalogue from "../../../public/catalogue.svg";
+import { getGoogleSheetData } from "../sheets";
+import LoadMore from "./loadMore";
 
 export default async function Page4() {
  

@@ -1,7 +1,7 @@
 import Menu from "./components/Menu";
 import {rische, helvetica} from "./fonts";
 import Page1 from "../pages/Page1";
-import Page4 from "../pages/Page4";
+import Page4 from "./components/Page4";
 import Page2 from "./components/Page2";
 import Page3 from "../pages/Page3";
 import Footer from "../pages/footer";
