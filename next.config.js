@@ -12,7 +12,7 @@ module.exports = {
           },
           {
             protocol: "https",
-            hostname: "i.ibb.co"
+            hostname: "www.example.com"
           }
         ],
       },

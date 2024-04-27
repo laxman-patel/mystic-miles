@@ -41,12 +41,12 @@ export default function Form({dataRes}) {
       return <> <> 
   <div onClick={closeModal} className="fixed right-0 h-full w-full bg-black/20 z-40 backdrop-blur-md"> </div>
 
-  <div className="fixed flex flex-col items-center top-1/3 z-50 bg-white px-28 py-16">
+  <div className="fixed flex flex-col items-center top-1/3 z-50 bg-white px-10 py-6 lg:px-28 lg:py-16">
     <div className="flex flex-col items-center">
-        <h1 className="font-serif font-semibold text-8xl">Thank you</h1>
+        <h1 className="font-serif font-semibold text-6xl lg:text-8xl">Thank you</h1>
         <p className="font-sans font-light">You will be receiving call from us shortly.</p>
     </div>
-        <button onClick={closeModal} className="bg-red mt-10 hover:bg-black transition-all flex items-center justify-between w-1/4 text-xltransition-all tracking-wider hover:cursor-pointer font-sans text-white font-light px-4 py-2" >CLOSE<Image className="w-4 hover:fill-red" src={closeWhite} alt="close" /></button>
+        <button onClick={closeModal} className="bg-red mt-10 hover:bg-black min-w-28 transition-all flex items-center justify-between  lg:w-1/4 text-xltransition-all tracking-wider hover:cursor-pointer font-sans text-white font-light px-4 py-2" >CLOSE<Image className="w-4 hover:fill-red" src={closeWhite} alt="close" /></button>
 
     </div>
   </> </>;
