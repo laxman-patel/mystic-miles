@@ -3,6 +3,7 @@ import logo from "../../public/logo.svg";
 import insta from "../../public/instagram.svg";
 import phone from "../../public/phone.svg";
 import email from "../../public/email.svg";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -12,10 +13,10 @@ export default function Footer() {
         <div className="w-4 h-1 bg-white/20" ></div>
     </div>
     <ul className="flex flex-col lg:flex-row items-center text-xl justify-between text-white font-sans font-light w-full lg:px-96">
-        <li className="py-3 lg:py-0">home</li>
-        <li  className="py-3 lg:py-0" >who we are</li>
-        <li  className="py-3 lg:py-0" >catalogue</li>
-        <li  className="py-3 lg:py-0" >our customers</li>
+        <Link href="#hero" className="py-3 lg:py-0">home</Link>
+        <Link href="#about"  className="py-3 lg:py-0" >who we are</Link>
+        <Link href="#customers" className="py-3 lg:py-0" >catalogue</Link>
+        <Link href="#catalog"  className="py-3 lg:py-0" >our customers</Link>
     </ul>
    <div className="flex justify-between items-center pt-20 pb-10 lg:w-1/5">
     <Image  src={email} alt="email" className="w-10 mr-5"  />

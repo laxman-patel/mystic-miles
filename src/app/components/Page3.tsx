@@ -3,6 +3,7 @@ import our_customers from "../../../public/our_customers.svg";
 import { getGoogleSheetData } from "../sheets";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import Carasouel from "@/app/components/Carasouel";
+import Page3_title from "./Page3_title";
 
 export const getStaticProps = (async () => {
   const dataRes = await getGoogleSheetData(true) || [[]];
@@ -17,8 +18,8 @@ export default async function Page3() {
   dataRes.shift();
 
   return (
-    <div id="customers" className="flex px-7 py-28 lg:px-14 lg:py-10 flex-col justify-between w-full h-full">
-      <Image className="opacity-45 w-screen pt-20" src={our_customers} alt="our customers" />
+    <div id="customers" className="flex px-7 py-16 lg:px-14 lg:py-10 flex-col justify-between w-full lg:h-full">
+      <Page3_title />
       <Carasouel dataRes={dataRes} />
     </div>
   );

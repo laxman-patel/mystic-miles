@@ -12,7 +12,7 @@ export default function Cta() {
 
   return (<>
  <button onClick={openModal} className="md:flex hidden items-center text-black bg-gold justify-between w-56 px-6 py-5 h-12 hover:bg-white transition">
-    <p className={`font-sans tracking-wider`}>GET IN TOUCH</p>
+    <p className={`font-sans tracking-wider text-[1.5vw] lg:text-sm`}>GET IN TOUCH</p>
     <Image className="w-4" src={arrow} alt="arrow" />
  </button>
   </>
