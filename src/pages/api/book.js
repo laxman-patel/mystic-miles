@@ -12,8 +12,10 @@ async function sendWhatsAppMessage(to, message) {
       to: `whatsapp:+91${to}`,
     });
     console.log(`Message sent to ${to}: ${response.sid}`);
+    return `Message sent to ${to}: ${response.sid}`
   } catch (error) {
     console.error(`Failed to send message: ${error}`);
+    return error;
   }
 }
 
@@ -24,14 +26,11 @@ const handler = async(req, res) => {
         name: req.body.name,
     }
 
-
-    console.log({data});
-
     const msg = `Mystic Miles confirms your reservation, ${data.name}.  Vehicle: ${data.carModel}.  For any inquiries, please reply to this message or call +91 9509564845.  We look forward to a smooth ride!`;
 
-    await sendWhatsAppMessage(data.contact, msg);
+   const response = await sendWhatsAppMessage(data.contact, msg);
 
-    res.status(200).json({"message": "Message sent successfully!"});
+    res.status(200).json({"message": response});
 }
 
 export default handler;
