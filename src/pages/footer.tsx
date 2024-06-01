@@ -20,7 +20,9 @@ export default function Footer() {
     </ul>
    <div className="flex justify-between items-center pt-20 pb-10 lg:w-1/5">
     <Image  src={email} alt="email" className="w-10 mr-5"  />
+   <Link href="https://www.instagram.com/mystic.miles_/">
     <Image  src={insta} alt="instagram" className="w-10 mr-5" />
+   </Link>
     <Image  src={phone} alt= "phone" className="w-10 mr-5" />
    </div>
 </div>

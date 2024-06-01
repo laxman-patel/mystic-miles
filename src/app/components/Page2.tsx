@@ -26,7 +26,7 @@ export default function Page2() {
         <div className="flex flex-col items-center lg:flex-row  mt-10 lg:mt-0 h-full lg:h-2/3 ">
          
             <Image className="border-white w-full lg:w-1/2 h-2/3 border-2 object-cover" src={cars} alt="a few cars" />
-            <p className="text-justify lg:text-justify pt-10 lg:pt-0 lg:pl-10 w-full lg:w-1/2 text-white font-sans font-light text-xl lg:text-2xl" >Mystic Miles offers an unparalleled luxury car rental experience, blending an exclusive
+            <p className="text-justify lg:text-justify pt-10 lg:pt-0 lg:pl-10 w-full lg:w-1/2 text-white font-sans font-light text-base lg:text-[1.3vw]" >Mystic Miles offers an unparalleled luxury car rental experience, blending an exclusive
 fleet with exceptional service to redefine travel at every turn.
 <br/><br/>Based out of Delhi, India. Mystic Miles was established with a clear vision: to deliver
 unforgettable experiences in the world's most prestigious vehicles. Since our inception,

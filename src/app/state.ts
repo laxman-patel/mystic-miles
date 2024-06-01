@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { getGoogleSheetData } from './sheets';
 
 export const useModalStore = create((set) => ({
   isModalOpen: false,
