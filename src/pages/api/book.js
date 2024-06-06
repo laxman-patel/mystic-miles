@@ -26,9 +26,12 @@ const handler = async(req, res) => {
         name: req.body.name,
     }
 
-    const msg = `Mystic Miles confirms your reservation, ${data.name}.  Vehicle: ${data.carModel}.  For any inquiries, please reply to this message or call +91 9509564845.  We look forward to a smooth ride!`;
+   const msg = `Mystic Miles confirms your reservation, ${data.name}.  Vehicle: ${data.carModel}.  For any inquiries, please reply to this message or call +91 9509564845.  We look forward to a smooth ride!`;
+   const msg2 = `${data.name} has booked a ride with Mystic Miles.  Vehicle: ${data.carModel}.  Contact: +91 ${data.contact}.  Have a great day ahead`;
+  
 
    const response = await sendWhatsAppMessage(data.contact, msg);
+   await sendWhatsAppMessage('9456623333', msg2);
 
     res.status(200).json({"message": response});
 }
