@@ -64,7 +64,7 @@ export default function BookingPage() {
                 console.log(data);
                 setIsSubmitting(false);
             }).then(() => {
-                router.push("/");
+                router.push("/thank");
             });
     }
 

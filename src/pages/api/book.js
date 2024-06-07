@@ -1,7 +1,7 @@
 import twilio from "twilio";
 
 const accountSid ='ACd71ca9077160f2feb2ed7ba6d5249ec9';
-const authToken = 'd2051424b3ae41516fd5e1218740c36e';
+const authToken = 'ffd4d1dc475f62e6e3f8cc00e41de7d2';
 const client = new twilio(accountSid, authToken);
 
 async function sendWhatsAppMessage(to, message) {
@@ -33,7 +33,7 @@ const handler = async(req, res) => {
    const response = await sendWhatsAppMessage(data.contact, msg);
    await sendWhatsAppMessage('9456623333', msg2);
 
-    res.status(200).json({"message": response});
+   res.status(200).json({"message": response});
 }
 
 export default handler;
